@@ -1,0 +1,50 @@
+body {
+  background: #cc2447;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: white;
+  padding: 10px 20px 100px;
+}
+
+.makeup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+textarea,
+input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+input[type="submit"],
+.button {
+  background: #021f94;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  appearance: none;
+  border-radius: 4px;
+  width: 100%;
+}
