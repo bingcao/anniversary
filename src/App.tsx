@@ -1,19 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "./App.css";
+import ProductList from "./ProductList";
 
 function App() {
-  return (
-    <nav>
-      <div>
-        <Link to="/product-list">Product list</Link>
-      </div>
-      <div>
-        <Link to="/product-form">Add new product</Link>
-      </div>
-    </nav>
-  );
+  return <ProductList />;
 }
 
 export default App;

@@ -1,12 +1,3 @@
-body {
-  background: #cc2447;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  color: white;
-  padding: 10px 20px 100px;
-}
-
 .product-form {
   display: flex;
   flex-direction: column;
@@ -16,7 +7,7 @@ body {
 
 .title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
