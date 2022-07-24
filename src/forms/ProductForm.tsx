@@ -2,23 +2,23 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
-import { addMakeup } from "../firebase";
-import { Makeup } from "../types";
+import { addProduct } from "../firebase";
+import { Product } from "../types";
 import "./form.css";
 
-export interface MakeupFormProps {}
+export interface ProductFormProps {}
 
-export default function MakeupForm(props: MakeupFormProps): JSX.Element {
-  const { register, handleSubmit } = useForm<Makeup>();
+export default function ProductForm(props: ProductFormProps): JSX.Element {
+  const { register, handleSubmit } = useForm<Product>();
   const navigate = useNavigate();
 
-  async function onSubmit(data: Makeup): Promise<void> {
-    await addMakeup(data);
+  async function onSubmit(data: Product): Promise<void> {
+    await addProduct(data);
     navigate("/");
   }
 
   return (
-    <div className="makeup-form">
+    <div className="product-form">
       <div className="title">Add new product!</div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="input">

@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { addDoc, collection, getDocs, getFirestore } from "firebase/firestore";
 
-import { Makeup } from "./types";
+import { Product } from "./types";
 
 const firebaseConfig = {
   apiKey: "AIzaSyATstsP_I6LRxX5WGE35z09s1Tg4uenuNE",
@@ -16,6 +16,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-export async function addMakeup(makeup: Makeup) {
-  await addDoc(collection(db, "makeup"), makeup);
+const PRODUCT_PATH = "products";
+
+export async function addProduct(product: Product): Promise<void> {
+  await addDoc(collection(db, PRODUCT_PATH), product);
+}
+
+export async function fetchProducts(): Promise<Array<Product>> {
+  const productsResponse = await getDocs(collection(db, PRODUCT_PATH));
+  return productsResponse.docs.map((doc) => doc.data() as Product);
 }
