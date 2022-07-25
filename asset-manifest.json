@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/anniversary/static/css/main.9a04b69f.css",
-    "main.js": "/anniversary/static/js/main.edc6a9fe.js",
+    "main.css": "/anniversary/static/css/main.407bcd57.css",
+    "main.js": "/anniversary/static/js/main.75f184ab.js",
     "static/js/787.71e672d5.chunk.js": "/anniversary/static/js/787.71e672d5.chunk.js",
-    "static/media/logo.svg": "/anniversary/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/friends.jpg": "/anniversary/static/media/friends.7b501083d5957fc58db4.jpg",
+    "static/media/ny.jpeg": "/anniversary/static/media/ny.d771a71de76f3d9a8285.jpeg",
+    "static/media/tired.jpeg": "/anniversary/static/media/tired.221b38fd57df65d93043.jpeg",
+    "static/media/cute.jpeg": "/anniversary/static/media/cute.cd4b6ba77d77b991a740.jpeg",
+    "static/media/friends.jpeg": "/anniversary/static/media/friends.d7908bdb8c4fc1a5e86b.jpeg",
+    "static/media/stack.jpeg": "/anniversary/static/media/stack.eb249f4c23ddb120a271.jpeg",
+    "static/media/oops.jpeg": "/anniversary/static/media/oops.457f7e30069ab8c798dd.jpeg",
+    "static/media/mother.jpeg": "/anniversary/static/media/mother.05cbc38ea5b6c0c1c41a.jpeg",
+    "static/media/bg.jpeg": "/anniversary/static/media/bg.f463d10bc34d6e81891f.jpeg",
     "index.html": "/anniversary/index.html",
-    "main.9a04b69f.css.map": "/anniversary/static/css/main.9a04b69f.css.map",
-    "main.edc6a9fe.js.map": "/anniversary/static/js/main.edc6a9fe.js.map",
+    "main.407bcd57.css.map": "/anniversary/static/css/main.407bcd57.css.map",
+    "main.75f184ab.js.map": "/anniversary/static/js/main.75f184ab.js.map",
     "787.71e672d5.chunk.js.map": "/anniversary/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a04b69f.css",
-    "static/js/main.edc6a9fe.js"
+    "static/css/main.407bcd57.css",
+    "static/js/main.75f184ab.js"
   ]
 }
