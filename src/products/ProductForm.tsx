@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { addProduct } from "../firebase";
 import { Product } from "../types";
 import "./form.css";
+import Button from "react-bootstrap/Button";
 
 export interface ProductFormProps {}
 
@@ -14,7 +15,7 @@ export default function ProductForm(props: ProductFormProps): JSX.Element {
 
   async function onSubmit(data: Product): Promise<void> {
     await addProduct(data);
-    navigate("/");
+    navigate("/products");
   }
 
   return (
@@ -39,9 +40,10 @@ export default function ProductForm(props: ProductFormProps): JSX.Element {
         </div>
         <div className="input">
           <input
-            placeholder="Rating"
+            placeholder="Rating (1-10)"
             min={0}
             max={10}
+            step={1}
             required={true}
             type="number"
             {...register("rating", { valueAsNumber: true })}
@@ -50,7 +52,7 @@ export default function ProductForm(props: ProductFormProps): JSX.Element {
         <div className="input">
           <textarea placeholder="Notes" {...register("notes")} />
         </div>
-        <input type="submit" />
+        <Button type="submit">Submit</Button>
       </form>
     </div>
   );

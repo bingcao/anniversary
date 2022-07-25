@@ -4,9 +4,10 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 import "./App.css";
 import { app } from "./firebase";
-import ProductList from "./ProductList";
+import ProductList from "./products/ProductList";
 import SignIn from "./auth/SignIn";
 import Image from "./images/friends.jpg";
+import HomePage from "./HomePage";
 
 function App() {
   const [user, loading, error] = useAuthState(getAuth(app));
@@ -15,7 +16,7 @@ function App() {
   }
   let content;
   if (user) {
-    content = <ProductList />;
+    content = <HomePage />;
   } else {
     content = <SignIn />;
   }

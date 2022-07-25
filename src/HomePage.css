@@ -1,0 +1,19 @@
+.nav-bar {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: solid 2px;
+  display: flex;
+  border-bottom: solid 2px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-bar > span {
+  cursor: pointer;
+}
+
+.selected-section {
+  font-size: 25px;
+}

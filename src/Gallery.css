@@ -1,0 +1,12 @@
+.announcement {
+  font-size: 25px;
+}
+
+.images {
+  font-size: 18px;
+  font-weight: bolder;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

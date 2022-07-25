@@ -6,7 +6,9 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import ProductForm from "./forms/ProductForm";
+import ProductForm from "./products/ProductForm";
+import ProductList from "./products/ProductList";
+import Gallery from "./Gallery";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,8 +17,11 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/product-form" element={<ProductForm />} />
+        <Route path="/" element={<App />}>
+          <Route path="/home" element={<Gallery />} />
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/product-form" element={<ProductForm />} />
+        </Route>
       </Routes>
     </HashRouter>
   </React.StrictMode>
