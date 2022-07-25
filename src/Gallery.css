@@ -5,6 +5,7 @@
 .images {
   font-size: 18px;
   font-weight: bolder;
+  color: yellow;
 
   display: flex;
   flex-wrap: wrap;
